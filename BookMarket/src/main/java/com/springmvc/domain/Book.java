@@ -5,6 +5,7 @@ import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.constraints.*;
+import java.math.BigDecimal;
 
 
 @Getter
@@ -12,16 +13,18 @@ import javax.validation.constraints.*;
 @NoArgsConstructor
 public class Book {
     @BookId
-    @Pattern(regexp ="ISBN[1-9]+")
+    @Pattern(regexp ="ISBN[1-9]+", message ="{Pattern.NewBook.bookId}")
     private String bookId;              //도서ID
 
-    @Size(min=4, max=50)
+    @Size(min=4, max=50, message="{Size.NewBook.name}")
     private String name;                //도서명
 
-    @Min(value=0)
-    @Digits(integer=8, fraction=2)
-    @NotNull
-    private int unitPrice;              //가격
+    @Min(value=0, message="{Min.NewBook.unitPrice}")
+    @Max(value=2000000)
+    @Digits(integer = 8, fraction = 2, message="{Digits.NewBook.UnitPrice}")
+    @NotNull(message="{NotNull.NewBook.unitPrice}")
+    private Integer unitPrice;              //가격
+
     private String author;              //작가
     private String description;         //설명
     private String publisher;           //출판사

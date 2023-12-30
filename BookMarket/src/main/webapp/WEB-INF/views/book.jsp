@@ -10,7 +10,7 @@
     <title>도서 목록</title>
 </head>
 <body>
-<nav class = "navbar navbar-expnad navbar-dark bg-dark">
+<nav class = "navbar navbar-expand navbar-dark bg-dark">
     <div class = "container">
         <div class = "navbar-header">
             <a class = "navbar-brand" href="./home">Home</a>

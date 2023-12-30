@@ -78,9 +78,16 @@ public class Cart {
             CartItem cartItem = cartItems.get(bookId);//등록된 도서 id에 대한 정보가져오기
             //등록된 도서 id의 개수 추가저장
             cartItem.setQuantity(cartItem.getQuantity() + item.getQuantity());
+            cartItems.put(bookId, cartItem);
         }else{
             cartItems.put(bookId, item);// 도서 id에 대한 도서 정보(item) 저장
         }
         updateGrandTotal();//총액 갱신
+    }
+
+    public void removeCartItem(CartItem item) {
+        String bookId = item.getBook().getBookId();
+        cartItems.remove(bookId);
+        updateGrandTotal();
     }
 }

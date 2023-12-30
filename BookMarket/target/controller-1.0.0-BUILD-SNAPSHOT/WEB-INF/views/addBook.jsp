@@ -91,9 +91,15 @@
                 <div class="col-sm-3">
                     <form:input path="unitsInStock" class="form-control"/>
                 </div>
+                <div class="col-sm-3">
+                    <form:errors path="unitsInStock" cssClass="text-danger"/>
+                </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-2 control-label" >출판일</label>
+                <div class="col-sm-3">
+                    <form:input path="releaseDate" class="form-control"/>
+                </div>
                 <div class="col-sm-3">
                     <form:errors path="releaseDate" class="form-control"/>
                 </div>

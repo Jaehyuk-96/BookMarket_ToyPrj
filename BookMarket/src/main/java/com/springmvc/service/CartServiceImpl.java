@@ -26,4 +26,9 @@ public class CartServiceImpl implements CartService{
         cartRepository.update(cartId, cart);
 
     }
+
+    @Override
+    public void deleteAll(String cartId) {
+        cartRepository.deleteAll(cartId);
+    }
 }
