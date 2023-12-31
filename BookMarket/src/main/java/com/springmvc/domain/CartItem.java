@@ -11,10 +11,14 @@ public class CartItem {
     private int totalPrice; //도서가격
 
     public CartItem(Book book) {
+
         this.book = book;
+        this.quantity=1;//개수를 1로 설정
+        this.totalPrice=book.getUnitPrice();
     }
 
     public Book getBook() {
+
         return book;
     }
 
@@ -37,32 +41,33 @@ public class CartItem {
     }
 
 
-    private void updateTotalPrice() {
+    private void updateTotalPrice() {//총합가격를 구하는 메서드
         totalPrice = this.book.getUnitPrice() * this.quantity;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if(o == null)
-            return false;
-        if(getClass() != o.getClass())
-            return false;
-        CartItem other = (CartItem) o;
-        if(book == null){
-            if(other.book != null)
-                return false;
-        }else if(!book.equals(other.book))
-            return false;
-        return true;
     }
 
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((book == null) ?  0 : book.hashCode());
+        result = prime * result + ((book == null) ? 0 : book.hashCode());
         return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        CartItem other = (CartItem) obj;
+        if (book == null) {
+            if (other.book != null)
+                return false;
+        } else if (!book.equals(other.book))
+            return false;
+        return true;
     }
 }
 

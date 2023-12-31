@@ -10,16 +10,15 @@ import java.util.Map;
 @Repository
 public class CartRepositoryImpl implements CartRepository{
 
-    private Map<String, Cart> listsofCarts;
+    private Map<String, Cart> listsofCarts;//장바구니 목록을 저장하는 HashMap
 
     public CartRepositoryImpl() {
-        listsofCarts = new HashMap<String, Cart>();
+        listsofCarts = new HashMap<String, Cart>();//객체가 생성될때 데이터를 초기화하고 시작
     }
 
     @Override
-    public Cart create(Cart cart) {
-        //장바구니 생성
-        if (listsofCarts.keySet().contains(cart.getCartId())){
+    public Cart create(Cart cart) {//새로운 장바구니를 생성하고 장바구니 id를 등록하고 생성된 장바구니 객체를 반환
+        if (listsofCarts.keySet().contains(cart.getCartId())){//예외처리
             throw new IllegalArgumentException(String.format("장바구니를 생성할수 없습니다. 장바구니 id(%)가 존재합니다", cart.getCartId()));
         }
         listsofCarts.put(cart.getCartId(), cart);
@@ -28,7 +27,7 @@ public class CartRepositoryImpl implements CartRepository{
 
     @Override
     public Cart read(String cartId)
-    {//장바구니 읽어오기
+    {//장바구니 Id를 이용하여 장바구니에 등록된 모든 정보를 가져와 반환
         return listsofCarts.get(cartId);
     }
 

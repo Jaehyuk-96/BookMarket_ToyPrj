@@ -10,5 +10,5 @@ import java.lang.annotation.*;
 public @interface BookId {
     String message() default "{BookId.NewBook.bookId}";
     Class<?>[] groups() default {};
-    public abstract Class<? extends Payload>[] payload() default {};
+    Class<?>[] payload() default {};
 }
