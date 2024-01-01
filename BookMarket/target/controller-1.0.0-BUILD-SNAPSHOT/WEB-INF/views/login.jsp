@@ -7,18 +7,19 @@
     <title>로그인</title>
 </head>
 <body>
-<nav class ="navbar navbar-expand navbar-dark bg-dark">
-    <div class = "container">
-        <div class ="navbar-header">
-            <a class = "navbar-brand" href="./home">Home</a>
-        </div>
-    </div>
-</nav>
-<div class="jumbotron">
-    <div class="container">
-        <h1 class = "display-3">로그인</h1>
-    </div>
-</div>
+<%--타일즈사용으로인한 주석처리--%>
+<%--<nav class ="navbar navbar-expand navbar-dark bg-dark">--%>
+<%--    <div class = "container">--%>
+<%--        <div class ="navbar-header">--%>
+<%--            <a class = "navbar-brand" href="./home">Home</a>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</nav>--%>
+<%--<div class="jumbotron">--%>
+<%--    <div class="container">--%>
+<%--        <h1 class = "display-3">로그인</h1>--%>
+<%--    </div>--%>
+<%--</div>--%>
 <div class ="container col-md-4">
     <div class = "text-center">
         <h3 class = "form-signin-heading">Please login</h3>

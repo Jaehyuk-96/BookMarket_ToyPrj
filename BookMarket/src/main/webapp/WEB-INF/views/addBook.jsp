@@ -9,18 +9,19 @@
     <title>도서 등록</title>
 </head>
 <body>
-<nav class="navbar navbar-expand  navbar-dark bg-dark">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="./home">Home</a>
-        </div>
-    </div>
-</nav>
-<div class="jumbotron">
-    <div class="container">
-        <h1 class="display-3">도서 등록</h1>
-    </div>
-</div>
+<%--타일즈 사용으로인한 주석처리--%>
+<%--<nav class="navbar navbar-expand  navbar-dark bg-dark">--%>
+<%--    <div class="container">--%>
+<%--        <div class="navbar-header">--%>
+<%--            <a class="navbar-brand" href="./home">Home</a>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</nav>--%>
+<%--<div class="jumbotron">--%>
+<%--    <div class="container">--%>
+<%--        <h1 class="display-3">도서 등록</h1>--%>
+<%--    </div>--%>
+<%--</div>--%>
 
 <div class="container">
     <div class="float-right">
@@ -127,10 +128,10 @@
             </div>
         </fieldset>
     </form:form>
-    <hr>
-    <footer>
-        <p>&copy; BookMarket</p>
-    </footer>
+<%--    <hr>--%>
+<%--    <footer>--%>
+<%--        <p>&copy; BookMarket</p>--%>
+<%--    </footer>--%>
 </div>
 </body>
 </html>

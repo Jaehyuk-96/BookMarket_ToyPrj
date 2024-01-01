@@ -6,13 +6,14 @@
     <title>예외처리</title>
 </head>
 <body>
-<nav class = "navbar navbar-expand navbar-dark bg-dark">
-    <div class ="container">
-        <div class = "navbar-header">
-            <a class = "navbar-brand" href="../home">Home</a>
-        </div>
-    </div>
-</nav>
+<%--타일즈사용으로인한 주석처리--%>
+<%--<nav class = "navbar navbar-expand navbar-dark bg-dark">--%>
+<%--    <div class ="container">--%>
+<%--        <div class = "navbar-header">--%>
+<%--            <a class = "navbar-brand" href="../home">Home</a>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</nav>--%>
 <div class="jumbotron">
     <div class="container"></div>
     <h2 class="alert alert-danger">

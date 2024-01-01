@@ -52,7 +52,19 @@
 			</beans:set>
 		</beans:property>
 	</beans:bean>
+<!--타일즈를 적용하여 뷰를 만들도록 타일즈 뷰 리졸버 등록 일반 뷰 리졸버로는 안됨-->
+	<beans:bean id="tilesViewResolver"
+				class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<beans:property name="viewClass"
+						value="org.springframework.web.servlet.view.tiles3.TilesView"/>
+		<beans:property name="order" value="1"/>
+	</beans:bean>
 
+<!--타일즈 레이아웃 정의 파일의 위치를 설정위해 tilesconfigurer등록	-->
+	<beans:bean id = "tilesConfigurer"
+				class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<beans:property name="definitions" value="/WEB-INF/tiles/tiles.xml"/>
+	</beans:bean>
 
 
 

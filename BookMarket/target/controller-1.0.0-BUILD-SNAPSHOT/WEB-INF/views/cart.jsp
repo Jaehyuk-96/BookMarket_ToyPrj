@@ -9,18 +9,19 @@
     <script src="<c:url value="/resources/js/controller.js"/>"></script>
 </head>
 <body>
-<nav class = "navbar navbar-expnad navbar-dark bg-dark">
-    <div class = "container">
-        <div class = "navbar-header">
-            <a class = "navbar-brand" href="./home">Home</a>
-        </div>
-    </div>
-</nav>
-<div class = "jumbotron">
-    <div class="container">
-        <h1 class = "display-3" >장바구니</h1>
-    </div>
-</div>
+<%--타일즈사용으로인한 주석처리--%>
+<%--<nav class = "navbar navbar-expnad navbar-dark bg-dark">--%>
+<%--    <div class = "container">--%>
+<%--        <div class = "navbar-header">--%>
+<%--            <a class = "navbar-brand" href="./home">Home</a>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</nav>--%>
+<%--<div class = "jumbotron">--%>
+<%--    <div class="container">--%>
+<%--        <h1 class = "display-3" >장바구니</h1>--%>
+<%--    </div>--%>
+<%--</div>--%>
 <div class = "container">
     <div>
         <form:form name="clearForm" method="delete">
@@ -58,8 +59,8 @@
         </table>
         <a href="<c:url value="/books"/>" class="btn btn-secondary">&raquo; 쇼핑계속하기</a>
     </div>
-    <hr>
-    <footer>
-        <p>&copy; BookMarket</p>
-    </footer>
+<%--    <hr>--%>
+<%--    <footer>--%>
+<%--        <p>&copy; BookMarket</p>--%>
+<%--    </footer>--%>
 </div>

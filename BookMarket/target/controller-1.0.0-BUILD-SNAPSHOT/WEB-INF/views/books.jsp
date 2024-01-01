@@ -8,18 +8,19 @@
     <title>도서 목록</title>
 </head>
 <body>
-<nav class = "navbar navbar-expnad navbar-dark bg-dark">
-    <div class = "container">
-        <div class = "navbar-header">
-            <a class = "navbar-brand" href="./home">Home</a>
-        </div>
-    </div>
-</nav>
-<div class = "jumbotron">
-    <div class="container">
-        <h1 class = "display-3" >도서목록</h1>
-    </div>
-</div>
+<%--타일즈 사용으로인한 주석처리--%>
+<%--<nav class = "navbar navbar-expnad navbar-dark bg-dark">--%>
+<%--    <div class = "container">--%>
+<%--        <div class = "navbar-header">--%>
+<%--            <a class = "navbar-brand" href="./home">Home</a>--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--</nav>--%>
+<%--<div class = "jumbotron">--%>
+<%--    <div class="container">--%>
+<%--        <h1 class = "display-3" >도서목록</h1>--%>
+<%--    </div>--%>
+<%--</div>--%>
 <div class="container">
     <div class="row" align="center">
         <c:forEach items="${bookList}" var="book">
@@ -42,9 +43,10 @@
         </c:forEach>
     </div>
     <hr>
-<footer class="container">
-    <p>&copy; BookMarket</p>
-    </footer>
+<%--    타일즈사용으로인한주석처리--%>
+<%--<footer class="container">--%>
+<%--    <p>&copy; BookMarket</p>--%>
+<%--    </footer>--%>
 </div>
 </body>
 </html>
